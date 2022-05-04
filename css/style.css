@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mybtn{
+    text-align: center; 
+    padding: 8px 10px; 
+    border: solid 1px #777777; 
+    color: #777; 
+    background:#ffffff;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 	
+    text-transform: uppercase;
+}
+.mybtn:hover {
+    color: #fff;
+    background: #333;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+.mybtn:active {
+    vertical-align: middle;
+    color: #01a715;
+}
+.btn{
+    padding: 8px 10px; 
+    border: solid 1px #777777; 
+    color: #777; 
+    background:#ffffff;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 	
+    text-transform: uppercase;
+}
+.btn:hover{
+    height: 30px;
+    background-color: rgb(196, 22, 22);
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+    
+}
+img{
+    height: 520px;
+    width: 520px;
+}
+.oclock-background {
+    display: block;
+}
+
+.oclock {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.centr {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    position: absolute;
+    background: red;
+    margin-top: 265px;
+    margin-left: 5px;
+}
+
+.second {
+    width: 2px;
+    height: 230px;
+    background: rgb(21, 255, 0);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 46px;
+    animation: circle 60s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+
+.minute {
+    width: 6px;
+    height: 160px;
+    background: rgb(73, 34, 34);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 110px;
+    animation: circle 3600s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+
+.hour {
+    width: 12px;
+    height: 110px;
+    background: rgb(60, 9, 9);
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 170px;
+    animation: circle 216000s infinite;
+    transform-origin: 50% 100%;
+    animation-timing-function: linear;
+}
+@keyframes circle {
+    100% {
+        transform: rotate(360deg);
+    }
+}

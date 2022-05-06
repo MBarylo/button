@@ -21,7 +21,18 @@
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear; 
 }
-.mybtn:active {
+.my{
+    text-align: center; 
+    padding: 8px 10px; 
+    border: solid 1px #777777; 
+    color: #777; 
+    background:#ffffff;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 	
+    text-transform: uppercase;
+}
+.my:active {
     vertical-align: middle;
     color: #01a715;
 }

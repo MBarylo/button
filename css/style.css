@@ -32,10 +32,22 @@
     -moz-transition: all .3s linear; 	
     text-transform: uppercase;
 }
-.my:active {
-    vertical-align: middle;
-    color: #01a715;
+.my:hover {
+    color: #fff;
+    background: #333;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
 }
+p{
+    opacity: 0%;
+}
+.my:hover {
+    background-color: white;
+    }
+.my:hover + p {
+    opacity: 100%
+ }
 .btn{
     padding: 8px 10px; 
     border: solid 1px #777777; 
@@ -45,6 +57,7 @@
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear; 	
     text-transform: uppercase;
+    height: 15px;
 }
 .btn:hover{
     height: 30px;
@@ -54,7 +67,11 @@
     -moz-transition: all .3s linear; 
     
 }
+.btns{
+    padding: 10px;
+}
 img{
+    margin: 20px;
     height: 520px;
     width: 520px;
 }
@@ -67,6 +84,7 @@ img{
     height: 600px;
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 .centr {
